@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/clash-royale",
+  "title": "Clash Royale",
+  "description": "Clash Royale player, clan, war, tournament, rankings, cards. Supercell dev key.",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/clash-royale",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-clash-royale",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/clash-royale/mcp"
+    }
+  ]
+}
