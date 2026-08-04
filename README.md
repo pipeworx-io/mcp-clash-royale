@@ -1,17 +1,37 @@
-# mcp-clash-royale
+# @pipeworx/clash-royale
 
-Clash Royale MCP.
+[Clash Royale API](https://developer.clashroyale.com/) MCP — player + clan + battle data. Free dev key.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
+
+## Auth
+
+- Platform: `PLATFORM_CLASHROYALE_KEY`. BYO: `?_apiKey=…`.
+- **Caveat:** Supercell keys are IP-bound. CF Workers use dynamic egress IPs — generate your key with "Allow any IP" or it will 403.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `clan_members` | Clan members. |
-| `clan_war_log` | War log. |
-| `clan_search` | Clan search. |
-| `tournament_search` | Search tournaments. |
+- `player(tag)` — player profile
+- `player_battles(tag)` — recent battles
+- `player_upcoming_chests(tag)` — upcoming chest cycle
+- `clan(tag)` — clan profile
+- `clan_members(tag, limit?, after?, before?)` — clan members
+- `clan_war_log(tag, limit?, after?, before?)` — war log
+- `clan_current_war(tag)` — current war
+- `clan_search(name?, locationId?, minMembers?, maxMembers?, minScore?, limit?, after?, before?)` — clan search
+- `tournament(tag)` — tournament info
+- `tournament_search(name?, limit?, after?, before?)` — search tournaments
+- `cards()` — card list
+- `locations()` — locations
+- `location(id)` — location detail
+- `rankings_clans(locationId, limit?)` — top clans for location
+- `rankings_players(locationId, limit?)` — top players for location
+
+`tag` example: `#2PP` (no `#` in URL — pack URL-encodes it).
+
+## Data source
+
+`https://api.clashroyale.com/v1`
 
 ## Quick Start
 
@@ -27,7 +47,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -51,7 +71,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
