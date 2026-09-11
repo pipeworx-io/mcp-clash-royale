@@ -1,18 +1,25 @@
 {
   "name": "@pipeworx/mcp-clash-royale",
   "version": "0.1.0",
-  "description": "Clash Royale player, clan, war, tournament, rankings, cards. Supercell dev key.",
+  "description": "Clash Royale MCP.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-clash-royale": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "clash-royale"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-clash-royale"
+    "url": "git+https://github.com/pipeworx-io/mcp-clash-royale.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
   },
   "devDependencies": {
     "typescript": "^5.7.0"
