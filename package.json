@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-clash-royale",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Clash Royale MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-f73b36c6e752936098adff732ec056477719aae23b88bcfed5141cd7fea7a996",
-    "sourceCommit": "5b29c2b0c11e1fcd954969a245b474e6e9475116"
+    "sourceHash": "v1-c8d738bb2450f74dc53a4617f6d1a46782f098b2efa281354af28d05ee9ec935",
+    "sourceCommit": "b0a4b8e2f3f5b3a4c3f9f2c9a73f91b20d32ce11"
   }
 }
