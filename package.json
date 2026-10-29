@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-clash-royale",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Clash Royale MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-clash-royale": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "clash-royale"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-clash-royale.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/clash-royale",
   "pipeworx": {
-    "sourceHash": "v1-19eab9f04ccab2c37c64e39504ca8123283bb8543baaab26f420389ed2acec2d",
-    "sourceCommit": "f1ef7a2f6b9cb1b8da1374ec2fcb28c661582b35"
+    "mode": "gateway",
+    "slug": "clash-royale",
+    "gatewaySlug": "clash-royale",
+    "sourceHash": "v1-c7f936bfc0387cd825d44ec68f643c61bb486f3b83652daaf3a6a1d8147dbaaa",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
