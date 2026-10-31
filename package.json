@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-clash-royale",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Clash Royale MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "clash-royale",
     "gatewaySlug": "clash-royale",
-    "sourceHash": "v1-c7f936bfc0387cd825d44ec68f643c61bb486f3b83652daaf3a6a1d8147dbaaa",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-5c4a570f80f4760d2e3495d08028dd1030860c25207865edd0d7e972399b5777",
+    "sourceCommit": "8cc978183948532674e797c429305c9d8ab2a1c3"
   }
 }
